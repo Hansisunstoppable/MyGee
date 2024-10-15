@@ -41,7 +41,7 @@ func (engine *Engine) POST(pattern string, handler HandlerFunc) {
 func (engine *Engine) Run(addr string) (err error) {
 	// 在addr端口监听
 	// 使用engine作为HTTP全球处理器
-	// 在http.ListenAndServe 函数中，端口号需要以":<port>", 如 ":9999"
+	// 在http.ListenAndServe 函数中，端口号需要以":<port>",如 ":9999"
 	return http.ListenAndServe(addr, engine)
 }
 
